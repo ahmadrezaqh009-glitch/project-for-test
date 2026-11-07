@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Learn MYSQL" content="mysql/text/html"; charset="utf-8">
+        <title>Learn MYSQL</title>
+    </head>
+    <body>
+        <h1><em>Learn MYSQL and Mysql-Connector</em></h1>
+        <hr><hr>
+        <h2>Part one install mysql and create user</h2>
+        <hr>
+        <h3>* install mysql</h3>
+        <p>To install MYSQL in Linux, we can use the command:<br> 
+            [username]$ sudo apt install mysql-server </p>
+
+        <p>But to install the mysql-connector, you need to install the venv first, 
+            the command to install venv and install the mysql-connector: 
+            <br>venv<br>
+            1- sudo apt indtall venv<br>2- pyhton3 -m venv venv_name<br>3- source venv_name/bin/activate<br>
+            mysql-connector: <br>
+            1- (venv_name)[username]$ pip install mysql-connector</p>
+        <h3>* create user in mysql</h3>
+        <p>To set up your account,
+             you need to enter these commands in a row (about each command described)</p>
+        <p><em>command one</em> with this command, you will enter MYSQL
+            <br>(venv_name)[username]$ sudo mysql
+        </p>
+        <p><em>commands two</em> With these two commands, you can create your account and then give it access to it, and then you press another command, which is nothing special, and then you leave with the last command.  
+            <br>mysql> CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';
+            <br>msyql> GRANT ALL ON * . * TO 'username'@'localhost';
+            <br>mysql> FLUSH PRIVILEGES;
+            <br>mysql> exit;
+        </p>
+
+        <br><br>
+    </body>
+</html>
